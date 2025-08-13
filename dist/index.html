@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diario & Tareas</title>
+    <script>
+      (function() {
+        try {
+          const t = localStorage.getItem('theme');
+          const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (t === 'dark' || (!t && prefersDark)) document.documentElement.classList.add('dark');
+        } catch(e) {}
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-BIwEwl3p.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BqYS3nwd.css">
+  </head>
+  <body class="bg-neutral-100 text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100">
+    <div id="root"></div>
+  </body>
+</html>

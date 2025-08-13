@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input { @apply rounded-xl border border-neutral-300 px-3 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-neutral-400 dark:bg-neutral-800 dark:border-neutral-700 dark:focus:ring-neutral-600; }
+.btn { @apply rounded-xl border px-3 py-2 bg-white hover:bg-neutral-50 active:scale-[0.99] dark:bg-neutral-800 dark:border-neutral-700 dark:hover:bg-neutral-700; }
+.btn-primary { @apply rounded-xl border px-3 py-2 bg-black text-white hover:opacity-90 dark:bg-neutral-100 dark:text-neutral-900; }
+.card { @apply bg-white border rounded-2xl p-4 shadow-sm dark:bg-neutral-800 dark:border-neutral-700; }
+.tab { @apply px-3 py-1.5 rounded-xl border dark:border-neutral-700; }
+.tab-active { @apply bg-black text-white dark:bg-neutral-100 dark:text-neutral-900; }
+.badge { @apply px-1.5 py-0.5 rounded border text-xs; }
+.icon-btn { @apply inline-flex items-center justify-center rounded-lg border px-2 py-1 hover:bg-neutral-50 dark:hover:bg-neutral-700; }
+.drag-ghost { @apply opacity-50; }
+.drop-zone { @apply ring-2 ring-neutral-400 dark:ring-neutral-500; }
+.over-target { @apply ring-2 ring-amber-400; }
